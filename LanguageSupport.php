@@ -30,12 +30,12 @@ $wgExtensionCredits['parserhook'][] = array (
 $wgAutoloadClasses[ 'SpecialLanguageSupport' ] = __DIR__ . '/SpecialLanguageSupport.php';
 $wgSpecialPages[ 'LanguageSupport' ] = 'SpecialLanguageSupport'; 
 
-// $wgResourceModules['ext.LanguageSupport'] = array(
-//         // JavaScript and CSS styles. To combine multiple files, just list them as an array.
-//         'scripts' => 'js/ext.LanguageSupport.core.js',
-//         // 'styles' => 'css/ext.myExtension.css',
-//         //'messages' => array( 'myextension-hello-world', 'myextension-goodbye-world' ),
-//         'remoteExtPath' => 'LanguageSupport',
-//         'localBasePath' => __DIR__
-// );
+$wgResourceModules['ext.LanguageSupport'] = array(
+        // JavaScript and CSS styles. To combine multiple files, just list them as an array.
+        'scripts' => 'js/ext.LanguageSupport.core.js',
+        'styles' => 'css/ext.LanguageSupport.css',
+        //'messages' => array( 'myextension-hello-world', 'myextension-goodbye-world' ),
+        'remoteExtPath' => 'LanguageSupport',
+        'localBasePath' => __DIR__
+);
 ?>

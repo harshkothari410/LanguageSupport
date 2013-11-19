@@ -7,7 +7,7 @@
 	.done(function( data ) {
 		console.log("success");
 		//data[0]['langcode_iso'] === 'guj'    data[0].propertyname
-		$('#languagedata').text(JSON.stringify(data));
+		//$('#languagedata').text(JSON.stringify(data));
 	})
 	.fail(function() {
 		console.log("error");
